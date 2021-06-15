@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">To Do App</string>
+    <string name="title">Tasks</string>
+
+    <!--Button-->
+    <string name="description_element">Todo description</string>
+
+    <!--New task-->
+    <string name="add_task_description">Add more task</string>
+    <string name="save_description">Save</string>
+</resources>

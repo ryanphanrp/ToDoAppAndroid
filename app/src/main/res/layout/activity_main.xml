@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--Title Heading for project-->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8sp"
+        android:layout_marginBottom="10sp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:src="@drawable/ic_brand_pink"
+            android:contentDescription="@string/description_element" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/title"
+            android:textColor="@color/primary_pink"
+            android:textStyle="bold"
+            android:textSize="@dimen/heading_title" />
+    </LinearLayout>
+
+
+    <!--List task with Recycler View-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/taskRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="true"
+        android:layout_below="@+id/header"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+    <!--Button add new task with Floating Action Button-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/new_task_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="15sp"
+        app:tint="@color/white"
+        android:backgroundTint="@color/primary_pink"
+        android:src="@drawable/icon_add"
+        android:contentDescription="@string/description_element" />
+</RelativeLayout>

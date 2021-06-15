@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <!--Input text-->
+        <EditText
+            android:id="@+id/new_task_input"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@null"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:hint="@string/add_task_description"
+            android:gravity="start"
+            android:padding="10dp"
+            android:autofillHints="@string/add_task_description"
+            android:inputType="" />
+
+        <!--Button Add New task-->
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/new_task_input"
+            android:layout_alignParentEnd="true"
+            android:text="@string/save_description"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"
+            android:textColor="@color/primary_pink"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+</RelativeLayout>
